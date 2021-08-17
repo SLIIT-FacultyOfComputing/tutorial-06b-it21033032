@@ -5,8 +5,11 @@ using namespace std;
 int main() {
   
    // 1. Create a Box type object called box1
+   
+   Box box1;
   
   
+
    // ======= DO NOT CHANGE THE INPUT ===========
    int height, length, width;
    cout << "Enter the Height of the Box : ";
@@ -16,9 +19,15 @@ int main() {
    cout << "Enter the width of the Box : ";
    cin >> width;
    // ===========================================
+
+   
   
    // 2. Use setters assign height, length, width throw
-  
+   box1.setDetails(length , width , height );
+   box1.getHeight();
+   box1.getLength();
+   box1.getWidth();
+   box1.calcVolume();
    // === DO NOT CHANGE THE OUTPUT =============
    cout << "Box Height " << box1.getHeight() << endl;
    cout << "Box Length " << box1.getLength() << endl;
